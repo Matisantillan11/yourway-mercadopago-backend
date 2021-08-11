@@ -1,0 +1,17 @@
+{
+  "name": "visualizar-mp-backend",
+  "version": "1.0.0",
+  "description": "mercadopago integration to visualizar project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx nodemon ./src/index.js"
+  },
+  "author": "@matisantillan11",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mercadopago": "^1.5.8",
+    "nodemon": "^2.0.12"
+  }
+}
