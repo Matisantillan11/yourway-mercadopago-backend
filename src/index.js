@@ -16,7 +16,7 @@ app.use(cors(corsOptions))
 //server
 app.set('port', 3000)
 app.use(express.json())
-const port = app.get('port')
+const port = process.env.PORT || app.get('port')
 router(app)
 
 app.listen(port, () => {
