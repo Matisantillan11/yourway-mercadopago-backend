@@ -1,7 +1,6 @@
 const express = require('express')
 const router = require('./network/routes.js')
-const dotenv = require('dotenv')
-dotenv.config()
+require('dotenv').config()
 
 const app = express()
 
