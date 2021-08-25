@@ -3,8 +3,7 @@ const createReference = async (item) => {
 	//mp
 	// Agrega credenciales
 	mercadopago.configure({
-		access_token:
-			'APP_USR-7650882508392725-070617-c653c354c03765866912126e47b7e646-134684389',
+		access_token: process.env.ACCESS_TOKEN_P,
 	})
 
 	let preference = { items: [] }

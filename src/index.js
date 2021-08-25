@@ -1,26 +1,18 @@
 const express = require('express')
 const router = require('./network/routes.js')
-const bodyParser = require('body-parser')
 const cors = require('cors')
+const dotenv = require('dotenv')
+dotenv.config()
 
 const app = express()
 
-/* const corsOptions = {
+const corsOptions = {
 	origin: '*',
 	methods: 'GET, POST, PATCH, DELETE',
 }
 
-app.use(cors(corsOptions)) */
+app.use(cors(corsOptions))
 
-app.use((req, res, next) => {
-	res.header('Access-Control-Allow-Origin', '*')
-	res.header('Access-Control-Request-Methods', 'GET, POST, PATCH')
-	res.header(
-		'Access-Control-Allow-Headers',
-		'Origin, X-Requested-With, Content-Type, Accept',
-	)
-	next()
-})
 //server
 app.set('port', 3000)
 app.use(express.json())
