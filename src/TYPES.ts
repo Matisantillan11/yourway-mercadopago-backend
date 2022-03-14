@@ -2,6 +2,7 @@ import user from '@Presentation/Controllers/User/types'
 import mail from '@Presentation/Controllers/Mail/types'
 import product from '@Presentation/Controllers/Product/types'
 import category from '@Presentation/Controllers/Category/types'
+import payment from '@Presentation/Controllers/Payment/types'
 import entity from '@Presentation/Controllers/Entity/types'
 
 let returnEntities: any = {}
@@ -11,6 +12,7 @@ returnEntities = jsonConcat(returnEntities, user);
 returnEntities = jsonConcat(returnEntities, mail);
 returnEntities = jsonConcat(returnEntities, product);
 returnEntities = jsonConcat(returnEntities, category);
+returnEntities = jsonConcat(returnEntities, payment);
 returnEntities = jsonConcat(returnEntities, entity);
 
 let TYPES = {

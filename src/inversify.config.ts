@@ -11,6 +11,7 @@ import RolContainer from '@Presentation/Controllers/Rol/inversify'
 import MailContainer from '@Presentation/Controllers/Mail/inversify'
 import ProductContainer from '@Presentation/Controllers/Product/inversify'
 import CategoryContainer from '@Presentation/Controllers/Category/inversify'
+import PaymentContainer from '@Presentation/Controllers/Payment/inversify'
 // containerimport
 
 // Interfaces
@@ -127,6 +128,7 @@ containerReturn = Container.merge(containerReturn, PermissionContainer)
 containerReturn = Container.merge(containerReturn, RolContainer)
 containerReturn = Container.merge(containerReturn, ProductContainer)
 containerReturn = Container.merge(containerReturn, CategoryContainer)
+containerReturn = Container.merge(containerReturn, PaymentContainer)
 // push
 
 export default containerReturn
