@@ -17,7 +17,9 @@ export default class ConnectionProvider implements ConnectionableProvider {
 
 		if (database) {
 
-			/* connection = this.getConnection(database); */
+			if(ConnectionProvider.connections.length > 0){
+				connection = this.getConnection(database);
+			}
 			
 			if (!connection) {
 				
